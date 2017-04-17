@@ -22,7 +22,7 @@ export default class CliDebugDriver {
     });
 
     // Render the screen.
-    this.update(new Buffer(512));
+    this.update(Buffer.alloc(512, 0));
   }
 
   update(buffer) {
